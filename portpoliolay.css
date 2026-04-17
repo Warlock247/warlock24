@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding:0;
+}
+body{
+    background-color: #c2d8c4;
+    font-family: arial,sans-serif;
+    color: #222222;
+    line-height: 1.6;
+    font-weight: lighter;
+    
+}
+#navbar{
+    text-align: right;
+}
+#navbar li{
+    display: inline;
+    padding: 50px 30px;
+
+}
+#navbar a{
+    text-decoration: none;
+    color: #222222;
+}
+#navbar a:hover{
+    opacity: 0.4;
+    transition: 1s ease;
+}
+.Hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 0 50px;
+    gap: 80px;
+    flex-wrap: wrap;
+    
+    margin: 0 auto;
+}
+.profile{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,1);
+}
+.main{
+    max-width: 500px;
+}
+.main h1{
+    font-size: 3.2em;
+    margin-bottom: 15px;
+    color: #222222;
+    font-family:sans-serif;
+    font-weight: lighter;
+}
+.main p{
+    font-size: 1.5em;
+    color: #555;
+}
+.arrow{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e74c3c;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce{
+    0%, 20% {transform:translateX(-50%)translateY(0);}
+    50%{transform:translateX(-50%)translateY(15px);}
+    100%{transform:translateX(-50%)translateY(0);}
+}
